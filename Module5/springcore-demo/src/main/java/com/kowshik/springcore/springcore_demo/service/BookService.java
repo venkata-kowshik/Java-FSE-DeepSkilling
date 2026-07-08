@@ -14,7 +14,7 @@ public class BookService {
 
     public void addBook(Book book) {
         if (book.getPrice() < 0) {
-            System.out.println("❌ Price cannot be negative");
+            System.out.println(" Price cannot be negative");
             return;
         }
         bookRepository.saveBook(book);
